@@ -1,0 +1,4 @@
+function distinctEquipes(data){
+  equipes = [];
+
+}
