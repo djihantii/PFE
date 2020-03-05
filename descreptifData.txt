@@ -1,0 +1,8 @@
+Data stock :
+
+Date --> Team --> Product --> quantity
+
+
+Data Flux :
+
+Produit --> (Entrée/sortie) --> Date --> Equipe --> Total CELAN

@@ -15,7 +15,9 @@
 
     <!-- Font Awesome JS -->
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
@@ -62,54 +64,16 @@
                 </div>
             </nav>
             <div class="container-fluid">
-              <h2>Visualisations</h2>
-
-
+              <h2>Visualisation de variation de stock</h2>
             </div>
-            <svg width="960" height="500"></svg>
             <script src="https://d3js.org/d3.v4.min.js"></script>
-            <script src="barchart.js"></script>
+            <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
 
-            <div class="line"></div>
-            <!-- <div class="equipes">
-              <form class="choix-equipes" id="choix-equipes" action="index.html" method="post">
-                <div class="form-group">
-                  <label>Equipes de travail</label>
-                  <select multiple class="form-control" id="choix">
-                    <option>AFD</option>
-                    <option>APOE</option>
-                    <option>PS1</option>
-                    <option>PS2</option>
-                    <option>Total général</option>
-                  </select>
-                </div>
-                <input type="submit" value="Filter" onclick="">
-              </form>
+            <select id="selectButton"></select>
+            <div id="stockVariations"></div>
 
-            </div> -->
-            <form class="choix-equipe" id="choix-equipe" action="index.html" method="post">
+            <script src="stockChart.js"></script>
 
-              <fieldset>
-                <legend>Veuillez choisir les équipes.</legend>
-                <div>
-                  <input type="checkbox" name="equipe" value="APOR" id="APOR">
-                  <label for="APOR">APOR</label>
-                </div>
-                <div>
-                  <input type="checkbox" name="equipe" value="AFD" id="AFD">
-                  <label for="AFD">AFD</label>
-                </div>
-                <div>
-                  <input type="checkbox" name="equipe" value="PS1" id="PS1">
-                  <label for="PS1">PS1</label>
-                </div>
-                <div>
-                  <input type="checkbox" name="equipe" value="PS2" id="PS2">
-                  <label for="PS2">PS2</label>
-                </div>
-              </fieldset>
-              <button type="submit" name="choisir" onclick="filterEquipe()" ></button>
-            </form>
 
         </div>
     </div>
@@ -128,6 +92,7 @@
             });
         });
     </script>
+
 </body>
 
 </html>

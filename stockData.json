@@ -1,0 +1,33 @@
+{
+    "2018/01" : {
+      "AFD" : {"THD" : 10,"AIRCOM" : 15, "FIBRE": 12},
+      "APOR" : {"THD" : 9,"AIRCOM" : 18, "FIBRE": 10},
+      "PS1" : {"THD" : 7,"AIRCOM" : 10, "FIBRE": 15}
+    },
+
+    "2018/02" : {
+      "AFD" : {"THD" : 12,"AIRCOM" : 12, "FIBRE": 12},
+      "APOR" : {"THD" : 4,"AIRCOM" : 14, "FIBRE": 14},
+      "PS1" : {"THD" : 6,"AIRCOM" : 16, "FIBRE": 16}
+    },
+
+    "2018/03" : {
+      "AFD" : {"THD" : 16,"AIRCOM" : 22, "FIBRE": 17},
+      "APOR" : {"THD" : 19,"AIRCOM" : 18, "FIBRE": 15},
+      "PS1" : {"THD" : 17,"AIRCOM" : 14, "FIBRE": 17},
+      "PS2" : {"THD" : 17,"AIRCOM" : 14, "FIBRE": 17}
+    },
+    "2018/04" : {
+      "AFD" : {"THD" : 11,"AIRCOM" : 23, "FIBRE": 12},
+      "APOR" : {"THD" : 11,"AIRCOM" : 13, "FIBRE": 10},
+      "PS1" : {"THD" : 11,"AIRCOM" : 13, "FIBRE": 19},
+      "PS2" : {"THD" : 11,"AIRCOM" : 16, "FIBRE": 18}
+    },
+    "2018/06" : {
+      "AFD" : {"THD" : 16,"AIRCOM" : 24, "FIBRE": 15},
+      "APOR" : {"THD" : 13,"AIRCOM" : 14, "FIBRE": 14},
+      "PS1" : {"THD" : 13,"AIRCOM" : 17, "FIBRE": 14},
+      "PS2" : {"THD" : 13,"AIRCOM" : 17, "FIBRE": 14}
+    }
+
+}
