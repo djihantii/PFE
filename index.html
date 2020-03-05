@@ -34,14 +34,17 @@
             <ul class="list-unstyled components">
                 <p>Opérations à effectuer</p>
                 <li class="active">
-                    <a href="index.html">Visualisations</a>
+                    <a href="index.html" >Visualisation du ETP</a>
+                </li>
+                <li>
+                    <a href="stock.html">Visualisation du stock</a>
                 </li>
                 <li>
                     <a href="celan.html">estimations celan</a>
                 </li>
 
                 <li>
-                    <a href="stock.html">Estimation stock</a>
+                    <a href="estimeStock.html" >Estimation stock</a>
 
                 </li>
 
@@ -67,12 +70,17 @@
                 </div>
             </nav>
             <div class="container-fluid">
-                <h2>Visualisations</h2>
+              <h2>Visualisation du ETP</h2>
 
 
             </div>
             <svg width="960" height="500"></svg>
             <script src="https://d3js.org/d3.v4.min.js"></script>
+            <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+
+            <select id="selectButton"></select>
+            <div id="celanVariation"></div>
+
             <script src="barchart.js"></script>
 
 
@@ -81,12 +89,11 @@
         </div>
     </div>
 
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous">
-        </script> <!-- Popper.JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
-        integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
-        crossorigin="anonymous"></script>
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
     <!-- Bootstrap JS -->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
         integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"

@@ -24,6 +24,7 @@ class DataLoader {
             async: false,
             dataType: "JSON",
             success: function (response) {
+                console.log(response);
                 callBack(container, response);
             }
         });

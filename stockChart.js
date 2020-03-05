@@ -1,3 +1,7 @@
+var dataLoader = new DataLoader();
+dataLoader.LoadStockVariation("127.0.0.1:8000/get_stock_variation");
+var stockVariations = dataLoader.getStockVariation();
+
 
 function jsonKeys(data){
   var result = [];

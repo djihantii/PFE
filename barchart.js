@@ -44,24 +44,20 @@ function drawChart(listEquipes){
   var y = d3.scaleLinear()
       .rangeRound([height, 0]);
 
-  var z = d3.scaleOrdinal()
-      .range(["#1955BE", "#706D34" , "#FC000","#F81212", "#5FFC00", "#98abc5", "#8a89a6", "#7b6888", "#6b486b", "#a05d56", "#d0743c", "#ff8c00"]);
+
 
   d3.csv("data.csv", function(d, i, columns) {
-    //alert('au moins***********');
+
     var groupes = d3.map(d, function(dd){return(dd.Equipe)}).keys();
-    //alert(groupes);
-    //alert("nombre de groupes = "+groupes.length);
+
     for (var i = 1, n = columns.length; i < n; ++i)
     {
-      //alert(columns.length);
-      //alert("avant column d(i) "+d[columns[i]]);
+
       d[columns[i]] = +d[columns[i]];
-      //alert("column i "+columns[i]);
-      //alert("column d(i) "+d[columns[i]]);
+
     }
     if(listEquipes.includes(d.Equipe)){
-      //alert(d["2018/02"]);
+
       return d;
     }
   }, function(error, data) {
@@ -72,6 +68,7 @@ function drawChart(listEquipes){
     var groupesk;
     x0.domain(groupesk = data.map(function(d) {return d.Equipe; }));
     x1.domain(keys).rangeRound([0, x0.bandwidth()]);
+    var z = d3.scaleOrdinal().domain(groupesk).range(d3.schemeSet2);
     y.domain([0, d3.max(data, function(d) { return d3.max(keys, function(key) { return d[key]; }); })]).nice();
     d3.select("#selectButton").selectAll('myOptions').data(groupesk).enter().append('option').text(function(d){return d;}).attr("value", function(d){return d;});
    g.append("g")
@@ -131,10 +128,6 @@ function drawChart(listEquipes){
         .text(function(d) { return d; });
 
     var filtered = [];
-
-    ////
-    //// Update and transition on click:
-    ////
 
     function update(d) {
 
@@ -226,7 +219,11 @@ function drawChart(listEquipes){
 
     }
 
-  });
+  },function updateTeam(d){
+
+
+  }
+  );
 }
 // var result = filterFile(["AFD", "PS2"]);
 
